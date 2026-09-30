@@ -1,0 +1,658 @@
+   <!-- Experience Section with Floating Timeline Design -->
+    <section id="experience" class="py-20 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-40 left-20 w-72 h-72 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-20 right-10 w-64 h-64 bg-accent opacity-5 rounded-full animate-float"></div>
+            
+            <!-- Tech-related SVG patterns -->
+            <svg class="absolute top-1/3 right-1/4 text-gray-100 dark:text-gray-900 opacity-10 w-32 h-32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12z"/>
+            </svg>
+            <svg class="absolute bottom-1/4 left-1/5 text-gray-100 dark:text-gray-900 opacity-20 w-24 h-24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Professional Journey</h2>
+                <div class="w-24 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Milestones and experiences that shaped my technical expertise</p>
+            </div>
+            
+            <!-- Interactive Timeline -->
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+                <!-- Left side: Timeline navigation -->
+                <div class="lg:w-1/4 mb-8 lg:mb-0" data-aos="fade-right">
+                    <div class="sticky top-32 bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-gray-700">
+                        <h3 class="text-xl font-bold mb-6 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            Career Timeline
+                        </h3>
+                        <nav class="experience-nav flex flex-col space-y-3">
+                            <a href="#exp-2024-now" class="timeline-nav-item group flex items-center p-3 rounded-lg bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all duration-300">
+                                <span class="w-8 h-8 flex-shrink-0 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center text-white text-xs mr-3">2024</span>
+                                <div>
+                                    <span class="font-medium group-hover:text-primary dark:group-hover:text-accent transition-colors">Present Roles</span>
+                                    <p class="text-xs text-gray-500">Multiple positions</p>
+                                </div>
+                            </a>
+                            <a href="#exp-2024-1" class="timeline-nav-item group flex items-center p-3 rounded-lg bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all duration-300">
+                                <span class="w-8 h-8 flex-shrink-0 rounded-full bg-gradient-to-r from-primary/80 to-accent/80 flex items-center justify-center text-white text-xs mr-3">2024</span>
+                                <div>
+                                    <span class="font-medium group-hover:text-primary dark:group-hover:text-accent transition-colors">Data Analytics</span>
+                                    <p class="text-xs text-gray-500">CDF Foundation</p>
+                                </div>
+                            </a>
+                            <a href="#exp-2024-2" class="timeline-nav-item group flex items-center p-3 rounded-lg bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all duration-300">
+                                <span class="w-8 h-8 flex-shrink-0 rounded-full bg-gradient-to-r from-primary/70 to-accent/70 flex items-center justify-center text-white text-xs mr-3">2024</span>
+                                <div>
+                                    <span class="font-medium group-hover:text-primary dark:group-hover:text-accent transition-colors">AI Internship</span>
+                                    <p class="text-xs text-gray-500">Edunet Foundation</p>
+                                </div>
+                            </a>
+                            <a href="#exp-2024-3" class="timeline-nav-item group flex items-center p-3 rounded-lg bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all duration-300">
+                                <span class="w-8 h-8 flex-shrink-0 rounded-full bg-gradient-to-r from-primary/60 to-accent/60 flex items-center justify-center text-white text-xs mr-3">2024</span>
+                                <div>
+                                    <span class="font-medium group-hover:text-primary dark:group-hover:text-accent transition-colors">Virtual Intern</span>
+                                    <p class="text-xs text-gray-500">EduSkills Foundation</p>
+                                </div>
+                            </a>
+                            <a href="#exp-2022" class="timeline-nav-item group flex items-center p-3 rounded-lg bg-gradient-to-r hover:from-primary/5 hover:to-accent/5 transition-all duration-300">
+                                <span class="w-8 h-8 flex-shrink-0 rounded-full bg-gradient-to-r from-primary/40 to-accent/40 flex items-center justify-center text-white text-xs mr-3">2022</span>
+                                <div>
+                                    <span class="font-medium group-hover:text-primary dark:group-hover:text-accent transition-colors">Volunteer</span>
+                                    <p class="text-xs text-gray-500">PrimaThink Tech</p>
+                                </div>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                
+                <!-- Right side: Experience Timeline -->
+                <div class="lg:w-3/4 relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-4 md:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-accent to-primary/30 z-0"></div>
+                    
+                    <!-- Experience Items -->
+                    <div class="space-y-16">
+                        <!-- Current Roles Group -->
+                        <div id="exp-2024-now" class="relative pl-12 md:pl-16">
+                            <!-- Timeline connector -->
+                            <div class="absolute left-2.5 md:left-4.5 -top-2 h-8 w-5 border-l-2 border-b-2 border-primary/30 rounded-bl-lg z-0"></div>
+                            
+                            <!-- Timeline node -->
+                            <div class="absolute left-0 top-0 w-9 h-9 bg-white dark:bg-gray-800 rounded-full border-4 border-primary flex items-center justify-center z-10">
+                                <div class="w-3 h-3 bg-accent rounded-full animate-pulse"></div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <span class="inline-block px-3 py-1 bg-primary/10 text-primary dark:text-accent rounded-full text-sm font-medium mb-2">Current Positions</span>
+                                <h3 class="text-2xl font-bold">Building My Technical Expertise</h3>
+                            </div>
+                            
+                            <!-- Role Cards Group -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                                <!-- Coding Club -->
+                                <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+                                    <div class="h-3 bg-gradient-to-r from-blue-500 to-purple-500"></div>
+                                    <div class="p-6">
+                                        <div class="flex justify-between items-start mb-4">
+                                            <h4 class="text-xl font-bold group-hover:text-primary dark:group-hover:text-accent transition-colors">Coding Club PRPCEM</h4>
+                                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded text-xs font-medium">Sep 2024 - Present</span>
+                                        </div>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                            Active member driving coding initiatives, organizing competitive programming sessions, and fostering a tech-learning environment.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-4">
+                                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-xs font-medium">Programming Challenges</span>
+                                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-xs font-medium">Hackathons</span>
+                                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-xs font-medium">Technical Workshops</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- MLSC Role -->
+                                <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="h-3 bg-gradient-to-r from-green-500 to-teal-500"></div>
+                                    <div class="p-6">
+                                        <div class="flex justify-between items-start mb-4">
+                                            <h4 class="text-xl font-bold group-hover:text-primary dark:group-hover:text-accent transition-colors">MLSC Web Development Co-Lead</h4>
+                                            <span class="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded text-xs font-medium">Aug 2024 - Present</span>
+                                        </div>
+                                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                            Spearheading web development initiatives at Microsoft Learn Student Club, orchestrating hands-on workshops and guiding junior developers.
+                                        </p>
+                                        <div class="flex flex-wrap gap-2 mt-4">
+                                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-xs font-medium">Leadership</span>
+                                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-xs font-medium">Web Technologies</span>
+                                            <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded-md text-xs font-medium">Student Mentorship</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Data Analytics Intern -->
+                        <div id="exp-2024-1" class="relative pl-12 md:pl-16">
+                            <!-- Timeline node -->
+                            <div class="absolute left-0 top-0 w-9 h-9 bg-white dark:bg-gray-800 rounded-full border-4 border-accent flex items-center justify-center z-10">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"></path>
+                                </svg>
+                            </div>
+                            
+                            <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up">
+                                <div class="h-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                                <div class="p-6">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                        <div class="flex items-center">
+                                            <div class="mr-4">
+                                                <svg class="w-10 h-10 text-purple-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2 12a10 10 0 1110 10 10 10 0 01-10-10zm13.5-4.25a.75.75 0 00-1.5 0v4.5a.75.75 0 00.31.61l2.3 1.7a.75.75 0 10.88-1.22l-2-1.46v-4.13z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-xl font-bold group-hover:text-primary dark:group-hover:text-accent transition-colors">Data Analytics Intern</h4>
+                                                <p class="text-gray-500 dark:text-gray-400">Connecting Dreams Foundation</p>
+                                                <p class="text-xs text-gray-400 dark:text-gray-500">Remote</p>
+                                            </div>
+                                        </div>
+                                        <span class="mt-2 md:mt-0 px-3 py-1.5 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Oct 2024 · 1 month</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-6 border-l-4 border-purple-200 dark:border-purple-900/50 pl-4 py-2">
+                                        Focused on agricultural data analytics through intensive technical sessions and hands-on case studies. Worked closely with mentors to develop data-driven solutions for real-world agricultural challenges, culminating in a project that demonstrated technical proficiency in AI and data analytics.
+                                    </p>
+                                    
+                                    <!-- Key Achievements -->
+                                    <div class="mb-6 space-y-2">
+                                        <div class="flex items-start">
+                                            <span class="text-purple-500 mr-2">•</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Engaged in technical sessions and hands-on case studies in data analysis in the agriculture domain</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="text-purple-500 mr-2">•</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Collaborated with a mentor to solve real-world challenges and develop data-driven solutions</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="text-purple-500 mr-2">•</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Completed a project showcasing technical proficiency and problem-solving using AI and data analytics</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-purple-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Data Analysis
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Agricultural Analytics
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            AI Solutions
+                                        </span>
+                                    </div>
+                                    <div class="mt-6 flex items-center">
+                                        <div class="w-10 h-10 overflow-hidden rounded-full bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.49 16.122L8.306 13a.75.75 0 10-1.05 1.07l3.786 3.707a.75.75 0 001.06-.01l7.025-7a.75.75 0 00-1.06-1.06l-6.578 6.415z"><</svg>/path>
+                                            </svg>
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="text-sm font-medium text-gray-900 dark:text-white">Successfully completed agricultural data project</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Edunet Foundation Internship -->
+                        <div id="exp-2024-2" class="relative pl-12 md:pl-16">
+                            <!-- Timeline node -->
+                            <div class="absolute left-0 top-0 w-9 h-9 bg-white dark:bg-gray-800 rounded-full border-4 border-primary flex items-center justify-center z-10">
+                                <svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z"></path>
+                                </svg>
+                            </div>
+                            
+                            <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up">
+                                <div class="h-3 bg-gradient-to-r from-blue-600 to-indigo-500"></div>
+                                <div class="p-6">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                        <div class="flex items-center">
+                                            <div class="mr-4">
+                                                <svg class="w-10 h-10 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.5 1.5c-.4-.4-1.1-.5-1.6-.1L5.9 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h2.9l6 4.5c.2.2.5.3.8.3.3 0 .5-.1.7-.2.4-.3.6-.8.6-1.3V3c0-.5-.2-1-.5-1.3zm5.2 3.8c-.3-.4-.8-.5-1.2-.3-.4.3-.5.8-.3 1.2 1 1.5 1.5 3.3 1.5 5.1 0 1.8-.5 3.6-1.5 5.1-.3.4-.1.9.3 1.2.2.1.3.2.5.2.3 0 .5-.1.7-.4 1.2-1.8 1.8-4 1.8-6.1 0-2.1-.6-4.2-1.8-6z"></path>
+                                                    <path d="M15.5 8.4c-.4.3-.4.8-.2 1.2.4.8.7 1.7.7 2.7 0 1-.2 1.9-.7 2.7-.3.4-.2.9.2 1.2.2.1.4.2.5.2.2 0 .5-.1.7-.4.7-1.1 1-2.3 1-3.7s-.3-2.6-1-3.7c-.3-.3-.8-.4-1.2-.2z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-xl font-bold group-hover:text-primary dark:group-hover:text-accent transition-colors">AI & Cloud Computing Internship</h4>
+                                                <p class="text-gray-500 dark:text-gray-400">Edunet Foundation × AICTE × IBM SkillsBuild</p>
+                                                <p class="text-xs text-gray-400 dark:text-gray-500">Remote</p>
+                                            </div>
+                                        </div>
+                                        <span class="mt-2 md:mt-0 px-3 py-1.5 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Jul - Aug 2024</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-6 border-l-4 border-blue-200 dark:border-blue-900/50 pl-4 py-2">
+                                        Completed a 4-week intensive internship focused on AI and Cloud Computing through the AICTE and IBM SkillsBuild program. Gained hands-on experience with IBM Cloud, Watson Studio, and AI-driven solutions, developing practical skills in building and deploying AI models for real-world applications.
+                                    </p>
+                                    
+                                    <!-- Key Achievements -->
+                                    <div class="mb-6 space-y-2">
+                                        <div class="flex items-start">
+                                            <span class="text-blue-500 mr-2">🚀</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Developed and deployed an AI model using IBM's advanced tools</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="text-blue-500 mr-2">🤝</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Collaborated in a team to tackle real-world challenges</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="text-blue-500 mr-2">🎓</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Learned from industry experts in masterclasses, enhancing technical and professional skills</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-2 mb-6">
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-blue-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            IBM Watson
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Cloud Computing
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-indigo-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            IBM Machine Learning
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-purple-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Data Analysis
+                                        </span>
+                                    </div>
+                                    <div class="mt-6 flex items-center">
+                                        <div class="w-10 h-10 overflow-hidden rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="text-sm font-medium text-gray-900 dark:text-white">Certification from IBM SkillsBuild</p>
+                                            <p class="text-xs text-gray-500 dark:text-gray-400">Boosted practical skills and employability</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Virtual Intern -->
+                        <div id="exp-2024-3" class="relative pl-12 md:pl-16">
+                            <!-- Timeline node -->
+                            <div class="absolute left-0 top-0 w-9 h-9 bg-white dark:bg-gray-800 rounded-full border-4 border-accent flex items-center justify-center z-10">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 16.938V19h5v2H6v-2h5v-2.062A8.001 8.001 0 016 9V3h12v6a8.001 8.001 0 01-5 7.938z"></path>
+                                </svg>
+                            </div>
+                            
+                            <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up">
+                                <div class="h-3 bg-gradient-to-r from-amber-500 to-orange-500"></div>
+                                <div class="p-6">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                        <div class="flex items-center">
+                                            <div class="mr-4">
+                                                <svg class="w-10 h-10 text-amber-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20 3H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1zM8.5 16.5v-9l7 4.5-7 4.5z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-xl font-bold group-hover:text-primary dark:group-hover:text-accent transition-colors">AI-ML Virtual Internship</h4>
+                                                <p class="text-gray-500 dark:text-gray-400">EduSkills Foundation × Google for Developers</p>
+                                                <p class="text-xs text-gray-400 dark:text-gray-500">Amravati, Maharashtra · Remote</p>
+                                            </div>
+                                        </div>
+                                        <span class="mt-2 md:mt-0 px-3 py-1.5 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-sm font-medium">Jul - Sep 2024</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-6 border-l-4 border-amber-200 dark:border-amber-900/50 pl-4 py-2">
+                                        Completed an intensive AI-ML virtual internship focused on developing and applying ML algorithms to solve real-world problems. Developed models to analyze large datasets using supervised and unsupervised learning techniques, with hands-on experience in TensorFlow, scikit-learn, Keras, and Python.
+                                    </p>
+                                    
+                                    <!-- Key Achievements -->
+                                    <div class="mb-6 space-y-2">
+                                        <div class="flex items-start">
+                                            <span class="text-amber-500 mr-2">🤖</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Developed machine learning models to analyze and process large datasets</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="text-amber-500 mr-2">📊</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Applied supervised and unsupervised learning techniques</p>
+                                        </div>
+                                        <div class="flex items-start">
+                                            <span class="text-amber-500 mr-2">📝</span>
+                                            <p class="text-sm text-gray-600 dark:text-gray-300">Completed several case studies including data preprocessing, feature engineering, and model evaluation</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex flex-wrap gap-2 mb-6">
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-amber-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            TensorFlow
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            scikit-learn
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-indigo-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Keras
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-red-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            NLP
+                                        </span>
+                                    </div>
+                                    <div class="mt-6 flex items-center">
+                                        <div class="w-10 h-10 overflow-hidden rounded-full bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-amber-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-11v6h2v-6h-2zm0-4v2h2V7h-2z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="text-sm font-medium text-gray-900 dark:text-white">Completed September 2024</p>
+                                            <p class="text-xs text-gray-500 dark:text-gray-400">Advanced certification with distinction</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Volunteer at PrimaThink -->
+                        <div id="exp-2022" class="relative pl-12 md:pl-16">
+                            <!-- Timeline node -->
+                            <div class="absolute left-0 top-0 w-9 h-9 bg-white dark:bg-gray-800 rounded-full border-4 border-gray-400 flex items-center justify-center z-10">
+                                <svg class="w-4 h-4 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.486 2 2 6.486 2 12v8a1 1 0 001 1h8c5.514 0 10-4.486 10-10S17.514 2 12 2zm0 18h-7v-8a7 7 0 0114 0c0 3.86-3.14 7-7 7z"></path>
+                                </svg>
+                            </div>
+                            
+                            <div class="group bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1" data-aos="fade-up">
+                                <div class="h-3 bg-gradient-to-r from-gray-500 to-gray-400"></div>
+                                <div class="p-6">
+                                    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+                                        <div class="flex items-center">
+                                            <div class="mr-4">
+                                                <svg class="w-10 h-10 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13 16h-2v-6h2v6zm-1-8a1 1 0 100-2 1 1 0 000 2zm11 12h-2V8.978c0-2.21-1.433-4.368-4.05-5.555a7.065 7.065 0 00-6.9 0C6.433 4.61 5 6.767 5 8.978V20H3a1 1 0 000 2h20a1 1 0 000-2z"></path>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-xl font-bold group-hover:text-primary dark:group-hover:text-accent transition-colors">Volunteer Intern</h4>
+                                                <p class="text-gray-500 dark:text-gray-400">PrimaThink Technologies Pvt. Ltd.</p>
+                                                <p class="text-xs text-gray-400 dark:text-gray-500">Amravati, Maharashtra · Hybrid</p>
+                                            </div>
+                                        </div>
+                                        <span class="mt-2 md:mt-0 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium">June 2022 - Sep 2022</span>
+                                    </div>
+                                    <p class="text-gray-600 dark:text-gray-300 mb-6 border-l-4 border-gray-200 dark:border-gray-700 pl-4 py-2">
+                                        Developed "Prima Chennai Point" - a digital guide to Chennai's hotspots, businesses, and services using HTML, CSS, and Bootstrap. Followed SDLC phases for project planning and deployment, ensuring smooth teamwork and effective collaboration within a team of five members.
+                                    </p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            HTML
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            CSS
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Bootstrap
+                                        </span>
+                                        <span class="px-3 py-1.5 bg-gray-100 dark:bg-gray-700/50 rounded-full text-sm font-medium flex items-center">
+                                            <svg class="w-4 h-4 mr-1 text-gray-500" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 12.293l4.146-4.147a.5.5 0 01.708.708L12.707 13l4.147 4.146a.5.5 0 01-.708.708L12 13.707l-4.146 4.147a.5.5 0 01-.708-.708L11.293 13 7.146 8.854a.5.5 0 11.708-.708L12 12.293z"></path>
+                                            </svg>
+                                            Netlify
+                                        </span>
+                                    </div>
+                                    <div class="mt-6 flex items-center">
+                                        <div class="w-10 h-10 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+                                            <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zm5 2a2 2 0 10-4 0 2 2 0 004 0zm-4 7a4 4 0 10-8 0v3h8v-3zm5 0a3 3 0 00-6 0v3h6v-3z"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="ml-3">
+                                            <p class="text-sm font-medium text-gray-900 dark:text-white">Collaborated with a team of 5 members</p>
+                                            <p class="text-xs text-gray-500 dark:text-gray-400">Sujal, Vedant, Aman, Chandrashekhar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline end cap -->
+                        <div class="relative pl-12 md:pl-16">
+                            <div class="absolute left-0 top-0 w-9 h-9 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center z-10">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 22H5a3 3 0 01-3-3V3a1 1 0 011-1h14a1 1 0 011 1v12h4v4a3 3 0 01-3 3zm-1-5v2a1 1 0 002 0v-2h-2zm-2-8H6v2h10V9zm0-4H6v2h10V5z"></path>
+                                </svg>
+                            </div>
+                            <div class="text-center py-6">
+                                <p class="text-gray-500 dark:text-gray-400 italic">Beginning of professional journey</p>
+                                <p class="mt-2 text-sm text-gray-400">Constantly expanding my experience and skillset</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills & Experience Summary -->
+            <div class="mt-20 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-700" data-aos="zoom-in">
+                <h3 class="text-2xl font-bold mb-6 text-center">Experience Summary</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4">
+                        <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg">5+</h4>
+                        <p class="text-gray-500 dark:text-gray-400">Professional Roles</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg">10+</h4>
+                        <p class="text-gray-500 dark:text-gray-400">Projects Completed</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="w-16 h-16 bg-purple-500 bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg">2+</h4>
+                        <p class="text-gray-500 dark:text-gray-400">Years Experience</p>
+                    </div>
+                    <div class="p-4">
+                        <div class="w-16 h-16 bg-green-500 bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold text-lg">3+</h4>
+                        <p class="text-gray-500 dark:text-gray-400">Organizations</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <a href="#contact" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-accent text-white rounded-lg font-medium overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <span class="relative flex items-center">
+                            Let's Work Together
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+            
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get header height for offset calculation
+                const headerHeight = document.querySelector('header').offsetHeight + 20;
+                
+                // Make the first timeline nav item active by default
+                const timelineNavItems = document.querySelectorAll('.timeline-nav-item');
+                if (timelineNavItems.length > 0) {
+                    timelineNavItems[0].classList.add('bg-gradient-to-r', 'from-primary/10', 'to-accent/10');
+                }
+                
+                // Add click event to timeline navigation items
+                timelineNavItems.forEach(item => {
+                    item.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        // Remove active class from all items
+                        timelineNavItems.forEach(navItem => {
+                            navItem.classList.remove('bg-gradient-to-r', 'from-primary/10', 'to-accent/10');
+                        });
+                        
+                        // Add active class to clicked item
+                        this.classList.add('bg-gradient-to-r', 'from-primary/10', 'to-accent/10');
+                        
+                        // Smooth scroll to target with improved positioning
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            // Add a small delay to ensure proper calculation
+                            setTimeout(() => {
+                                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                                window.scrollTo({
+                                    top: targetPosition,
+                                    behavior: 'smooth'
+                                });
+                            }, 50);
+                        }
+                    });
+                });
+                
+                // Add scroll spy functionality
+                window.addEventListener('scroll', function() {
+                    const scrollPosition = window.scrollY + headerHeight + 50;
+                    
+                    // Check each experience item's position
+                    document.querySelectorAll('[id^="exp-"]').forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.offsetHeight;
+                        
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                            // Remove active class from all nav items
+                            timelineNavItems.forEach(navItem => {
+                                navItem.classList.remove('bg-gradient-to-r', 'from-primary/10', 'to-accent/10');
+                            });
+                            
+                            // Add active class to corresponding nav item
+                            const correspondingNavItem = document.querySelector(`.timeline-nav-item[href="#${section.id}"]`);
+                            if (correspondingNavItem) {
+                                correspondingNavItem.classList.add('bg-gradient-to-r', 'from-primary/10', 'to-accent/10');
+                            }
+                        }
+                    });
+                });
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        

@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#0055ff">
+    <!-- <meta name="theme-color" content="#B8D1C5"> -->
+    <!-- <meta name="theme-color" content="#133E57"> -->
+    <meta name="description"
+        content="Shehnaz Samir Rangrez - AI/ML Engineer & Web Developer. Explore my portfolio showcasing my skills, projects, and experience in the tech industry.">
+    <meta name="keywords" content="portfolio, AI, ML, web developer, Java, Python, Django, IBM Cloud">
+    <meta name="author" content="Shehnaz Samir Rangrez">
+    <meta property="og:title" content="Shehnaz Samir Rangrez | AI/ML Engineer & Web Developer">
+    <meta property="og:description"
+        content="Portfolio of Shehnaz Samir Rangrez - AI/ML Enthusiast, Web Developer, and Cloud Advocate">
+    <meta property="og:url" content="https://ShehnazSamirRangrez.me/">
+    <meta property="og:type" content="website">
+    <!-- logo -->
+    <meta property="og:image" content="ShehnazSamirRangrez_logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shehnaz Samir Rangrez | Web Developer, Data Analytics & UI/UX Designerd ">
+    <meta name="twitter:description"
+        content="Portfolio of Shehnaz Samir Rangrez - Web Developer, Data Analytics & UI/UX Designerd">
+    <!-- -->
+    <meta name="twitter:image" content="ShehnazSamirRangrez_logo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Shehnaz Samir Rangrez">
+    <meta name="application-name" content="Shehnaz Samir Rangrez">
+    <meta name="msapplication-TileColor" content="#0055ff">
+    <meta name="msapplication-TileImage" content="ShehnazSamirRangrez_logo.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="viewport-fit" content="cover">
+    <meta name="robots" content="index, follow">
+    <script src="main.js" defer></script>
+
+    <title>Shehnaz Samir Rangrez | Web Developer, Data Analytics & UI/UX Designerd</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Shehnaz_logo_new.png" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#133E57',
+                        secondary: '#f0f0f0',
+                        accent: '#00aaff',
+                        dark: '#0f172a',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        float: 'float 6s ease-in-out infinite',
+                        pulseSlow: 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            /* color: #0f172a; */
+            color: #2f4272;
+        }
+
+        .dark body {
+            background-color: #0f172a;
+            /* color: #f8fafc; */
+            color: #536e89;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #133E57, #136cb0);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background: linear-gradient(90deg, #133E57, #B8D1C5);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .skill-bar {
+            transition: width 2s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .dark .project-card {
+            background-color: #1e293b;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .dark .project-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body class="dark:bg-dark dark:text-white transition-colors duration-300">
+    <!-- Preloader -->
+    <div id="preloader"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-dark transition-opacity duration-500">
+        <div class="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed w-full z-40 bg-white/80 dark:bg-dark/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="Shehnaz_logo_final.png" alt="Shehnaz Rangrez"
+                    class="h-20 w-auto object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300 -my-3"
+                    loading="lazy">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Theme Toggle Button
+            <button id="theme-toggle" type="button" class="p-2 bg-gray-100 dark:bg-gray-700 rounded-full focus:outline-none focus:ring-2 focus:ring-primary dark:focus:ring-accent hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors" aria-label="Toggle dark mode">
+                <svg id="theme-toggle-dark-icon" class="w-5 h-5 text-gray-600 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="theme-toggle-light-icon" class="w-5 h-5 text-yellow-400 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+            </button> -->
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#home" class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+            <a href="#about" class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">About</a>
+            <a href="#skills" class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">Skills</a>
+            <a href="#experience"
+                class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">Experience</a>
+            <a href="#projects" class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">Projects</a>
+            <a href="#certifications"
+                class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">Certifications</a>
+            <a href="#contact" class="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">Contact</a>
+        </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Unique Design -->
+    <section id="home" class="min-h-screen flex items-center pt-20 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-20 left-10 w-64 h-64 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-accent opacity-5 rounded-full animate-float"></div>
+            <div
+                class="absolute top-1/2 left-1/3 w-32 h-32 bg-gradient-to-r from-primary to-accent opacity-10 rounded-full animate-spin-slow">
+            </div>
+
+            <!-- Tech-related SVG patterns -->
+            <svg class="absolute top-20 right-20 text-gray-100 dark:text-gray-900 opacity-30 w-24 h-24"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
+            <svg class="absolute bottom-10 left-1/4 text-gray-100 dark:text-gray-900 opacity-20 w-32 h-32"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 py-16 z-10 relative">
+            <div class="flex flex-col lg:flex-row items-center">
+                <!-- Text content with staggered animation -->
+                <div class="lg:w-1/2 mb-12 lg:mb-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative mb-6">
+                        <div class="absolute -left-4 top-0 h-full w-1 bg-gradient-to-b from-primary to-accent"></div>
+                        <span class="text-sm font-bold text-primary tracking-widest uppercase">Welcome to my
+                            portfolio</span>
+                        <h1 class="mt-2 text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                            I'm <span class="relative inline-block">
+                                <span class="gradient-text">Shehnaz Samir Rangrez</span>
+
+                            </span>
+                        </h1>
+                    </div>
+
+                    <!-- Typing effect container -->
+                    <div class="typewriter-container h-16 mb-6">
+                        <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
+                            <span class="font-medium">I specialize in</span>
+                            <span class="inline-block w-2 h-6 ml-1 bg-accent animate-pulse"></span>
+                            <br>
+                            <span id="typing-text" class="font-bold text-primary dark:text-accent"></span>
+                        </h2>
+                    </div>
+
+                    <!-- Skills badges -->
+                    <div class="flex flex-wrap gap-2 mb-8" data-aos="fade-up" data-aos-delay="200">
+                        <span
+                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary dark:bg-opacity-20 dark:text-accent rounded-full text-sm font-medium">Data
+                            Analytics</span>
+                        <span
+                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary dark:bg-opacity-20 dark:text-accent rounded-full text-sm font-medium">Python</span>
+                        <span
+                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary dark:bg-opacity-20 dark:text-accent rounded-full text-sm font-medium">Web
+                            & Software
+                            Development</span>
+                        <span
+                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary dark:bg-opacity-20 dark:text-accent rounded-full text-sm font-medium">Graphic
+                            Design </span>
+                        <span
+                            class="px-3 py-1 bg-primary bg-opacity-10 text-primary dark:bg-opacity-20 dark:text-accent rounded-full text-sm font-medium">UI/UX
+                            <UI>
+                        </span>
+                    </div>
+
+                    <!-- CTA buttons with hover effects -->
+                    <div class="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#contact"
+                            class="group relative px-8 py-4 bg-gradient-to-r from-primary to-accent text-white rounded-lg font-medium overflow-hidden">
+                            <span
+                                class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -translate-y-0 bg-gradient-to-r from-accent to-primary group-hover:translate-x-full group-hover:scale-102 group-hover:opacity-0"></span>
+                            <span class="relative flex items-center justify-center">
+                                Hire Me
+                                <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <!-- pdf_resume -->
+                        <a href="https://drive.google.com/file/d/1H5XsQoxrWPs5oouI1yaMbo5_cQKpSUDf/view?usp=sharing"
+                            class="group relative px-8 py-4 border-2 border-primary text-primary dark:text-white rounded-lg font-medium overflow-hidden">
+                            <span
+                                class="absolute inset-0 w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full"></span>
+                            <span class="relative flex items-center justify-center group-hover:text-white">
+                                Download CV
+                                <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-y-1"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Profile image with creative design -->
+                <div class="lg:w-1/2 hidden md:flex justify-center" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="relative">
+                        <!-- Circular spinning background -->
+                        <div
+                            class="absolute inset-0 rounded-full bg-gradient-to-r from-primary to-accent opacity-30 blur-md animate-spin-slow">
+                        </div>
+
+                        <!-- Main image container -->
+                        <!-- <div class="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500"> -->
+                        <div
+                            class="relative w-84 h-80 md:w-86 md:h-96 rounded-3xl overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
+                            <!-- w-72 h-80 md:h-96 -->
+                            <img src="Shehnaz_photo_new.jpeg" alt="Shehnaz Samir Rangrez"
+                                class="w-full h-full object-cover" loading="lazy">
+
+                            <!-- Overlay gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-30"></div>
+                        </div>
+
+                        <!-- Decorative elements -->
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-lg transform rotate-6">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center text-white">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Experience badge -->
+                        <div class="absolute -top-4 -left-4 bg-white dark:bg-gray-800 p-3 rounded-full shadow-xl">
+                            <div
+                                class="w-16 h-16 rounded-full flex flex-col items-center justify-center bg-gradient-to-r from-primary to-accent text-white">
+                                <span class="text-lg font-bold">1+</span>
+                                <span class="text-xs">Years</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+                <span class="text-sm text-gray-500 dark:text-gray-400 mb-2">Scroll down</span>
+                <div
+                    class="w-6 h-10 border-2 border-primary dark:border-accent rounded-full flex justify-center items-start p-1">
+                    <div class="w-2 h-2 bg-primary dark:bg-accent rounded-full animate-bounce"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pt-10 pb-15 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute bottom-10 right-20 w-80 h-80 bg-primary opacity-5 rounded-full animate-float"></div>
+            <div class="absolute top-40 left-10 w-48 h-48 bg-accent opacity-5 rounded-full animate-pulse-slow"></div>
+
+            <!-- Tech-related SVG patterns -->
+            <svg class="absolute bottom-20 left-20 text-gray-100 dark:text-gray-900 opacity-20 w-24 h-24"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d=""></path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p id="about-tagline" class="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"></p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-stretch gap-12">
+                <!-- Profile Photo with Creative Design -->
+                <div class="lg:w-2/5 flex justify-center" data-aos="zoom-in-right">
+                    <div class="relative group">
+                        <!-- Image Frame -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-500">
+                        </div>
+
+                        <div
+                            class="relative w-72 h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl transform -rotate-2 group-hover:rotate-0 transition-all duration-500 border-4 border-white dark:border-gray-800">
+                            <img id="profile-image" src="Shehnaz_photo_new.jpeg" alt="Shehnaz Samir Rangrez"
+                                class="w-full h-full object-cover" loading="lazy">
+
+                            <!-- Overlay with gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark/50 to-transparent opacity-40"></div>
+
+                            <!-- Interactive badges -->
+                            <div class="absolute bottom-4 left-4 right-4 flex justify-between">
+                                <span id="badge-1"
+                                    class="px-3 py-1 bg-white/90 dark:bg-dark/90 rounded-full text-sm font-medium shadow-lg backdrop-blur-sm"></span>
+                                <span id="badge-2"
+                                    class="px-3 py-1 bg-white/90 dark:bg-dark/90 rounded-full text-sm font-medium shadow-lg backdrop-blur-sm"></span>
+
+                            </div>
+                        </div>
+
+
+
+                        <!-- Decorative elements -->
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 p-3 rounded-2xl shadow-lg transform rotate-6 group-hover:scale-110 transition-transform duration-300">
+                            <div
+                                class="w-12 h-12 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center text-white">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- Experience badge -->
+                        <div
+                            class="absolute -top-4 -left-4 bg-white dark:bg-gray-800 p-2 rounded-full shadow-xl group-hover:scale-110 transition-transform duration-300">
+                            <div id="experience-badge"
+                                class="w-14 h-14 rounded-full flex flex-col items-center justify-center bg-gradient-to-r from-primary to-accent text-white">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content with Interactive Elements -->
+                <div class="lg:w-3/5" data-aos="fade-left" data-aos-delay="200">
+                    <div class="relative mb-8">
+                        <div class="absolute -left-4 -top-4 h-16 w-16 bg-primary/10 dark:bg-primary/5 rounded-full">
+                        </div>
+                        <h3 id="about-headline" class="text-2xl md:text-3xl font-bold relative"></h3>
+                    </div>
+
+                    <div id="about-paragraphs" class="space-y-4 text-gray-600 dark:text-gray-300">
+                        <!-- Paragraphs will be inserted here by JavaScript -->
+                    </div>
+
+                    <!-- Stats Cards with Animation -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8 mb-8">
+                        <div class="group relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+                            data-aos="flip-left" data-aos-delay="100">
+                            <div
+                                class="absolute -right-6 -bottom-6 w-16 h-16 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                            </div>
+                            <div id="stat-1-value"
+                                class="text-primary dark:text-accent text-3xl font-bold mb-1 group-hover:scale-110 transition-transform duration-300">
+                            </div>
+                            <div id="stat-1-label" class="text-gray-600 dark:text-gray-400 font-medium"></div>
+                        </div>
+
+                        <div class="group relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+                            data-aos="flip-left" data-aos-delay="200">
+                            <div
+                                class="absolute -right-6 -bottom-6 w-16 h-16 bg-accent/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                            </div>
+                            <div id="stat-2-value"
+                                class="text-primary dark:text-accent text-3xl font-bold mb-1 group-hover:scale-110 transition-transform duration-300">
+                            </div>
+                            <div id="stat-2-label" class="text-gray-600 dark:text-gray-400 font-medium"></div>
+                        </div>
+
+                        <div class="group relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300"
+                            data-aos="flip-left" data-aos-delay="300">
+                            <div
+                                class="absolute -right-6 -bottom-6 w-16 h-16 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                            </div>
+                            <div id="stat-3-value"
+                                class="text-primary dark:text-accent text-3xl font-bold mb-1 group-hover:scale-110 transition-transform duration-300">
+                            </div>
+                            <div id="stat-3-label" class="text-gray-600 dark:text-gray-400 font-medium"></div>
+                        </div>
+                    </div>
+
+                    <!-- Education Timeline -->
+                    <div class="mt-8">
+                        <h4 class="font-bold text-lg mb-4 flex items-center">
+                            <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                                </path>
+                            </svg>
+                            Education
+                        </h4>
+                        <div id="education-timeline"
+                            class="relative pl-6 border-l-2 border-primary/20 dark:border-primary/10 space-y-4">
+                            <!-- Education items will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <!-- pdf_resume -->
+                    <!-- CTA Button with Creative Design -->
+                    <div class="mt-8" data-aos="fade-up"></div>
+                    <a id="resume-link"
+                        href="https://drive.google.com/file/d/1H5XsQoxrWPs5oouI1yaMbo5_cQKpSUDf/view?usp=sharing"
+                        class="group relative inline-flex items-center px-8 py-4 bg-white dark:bg-gray-800 text-primary dark:text-accent border-2 border-primary dark:border-accent rounded-lg font-medium overflow-hidden shadow-md hover:shadow-xl transition-all duration-300">
+                        <span
+                            class="absolute left-0 top-0 h-full w-0 bg-gradient-to-r from-primary to-accent group-hover:w-full transition-all duration-400 opacity-80"></span>
+                        <span
+                            class="relative flex items-center justify-center group-hover:text-white transition-colors duration-200">
+                            Download Complete Resume
+                            <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"></svg>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                            </path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Skills Section with Tab System -->
+    <!-- scroll animation infinite horizontal -->
+    <section class="marquee-section">
+        <div class="marquee-wrapper">
+
+            <!-- Line 1 (Left → Right) -->
+            <div class="marquee line1">
+                <div class="track">
+                    <!-- Original Items -->
+                    <div class="item"><img src="Icons/figma.svg"><span>Figma.</span></div>
+                    <div class="item"><img src="Icons/gh.svg"><span>GitHub.</span></div>
+                    <div class="item"><img src="Icons/react.svg"><span>React JS.</span></div>
+                    <div class="item"><img src="Icons/html.svg"><span>HTML.</span></div>
+                    <div class="item"><img src="Icons/sql.svg"><span>SQL.</span></div>
+
+                    <!-- 🔁 Duplicate Items for seamless loop -->
+                    <div class="item"><img src="Icons/figma.svg"><span>Figma.</span></div>
+                    <div class="item"><img src="Icons/gh.svg"><span>GitHub.</span></div>
+                    <div class="item"><img src="Icons/react.svg"><span>React JS.</span></div>
+                    <div class="item"><img src="Icons/html.svg"><span>HTML.</span></div>
+                    <div class="item"><img src="Icons/sql.svg"><span>SQL.</span></div>
+                    <!-- 🔁 Duplicate Items for seamless loop -->
+                    <div class="item"><img src="Icons/figma.svg"><span>Figma.</span></div>
+                    <div class="item"><img src="Icons/gh.svg"><span>GitHub.</span></div>
+                    <div class="item"><img src="Icons/react.svg"><span>React JS.</span></div>
+                    <div class="item"><img src="Icons/html.svg"><span>HTML.</span></div>
+                    <div class="item"><img src="Icons/sql.svg"><span>SQL.</span></div>
+                </div>
+            </div>
+
+            <!-- Line 2 (Right → Left) -->
+            <div class="marquee line2">
+                <div class="track">
+                    <!-- Original Items -->
+                    <div class="item"><img src="Icons/css.svg"><span>CSS </span></div>
+                    <div class="item"><img src="Icons/js.svg"><span>JS.</span></div>
+                    <div class="item"><img src="Icons/mg.svg"><span>MongoDB.</span></div>
+                    <div class="item"><img src="Icons/html.svg"><span>HTML.</span></div>
+                    <div class="item"><img src="Icons/Dbsmysql.svg"><span>MySQL.</span></div>
+
+
+                    <!-- 🔁 Duplicate Items -->
+                    <div class="item"><img src="Icons/css.svg"><span>CSS</span></div>
+                    <div class="item"><img src="Icons/js.svg"><span>JS.</span></div>
+                    <div class="item"><img src="Icons/mg.svg"><span>MongoDB.</span></div>
+                    <div class="item"><img src="Icons/html.svg"><span>HTML</span></div>
+                    <div class="item"><img src="Icons/Dbsmysql.svg"><span>MySQL</span></div>
+                    <!-- 🔁 Duplicate Items -->
+                    <div class="item"><img src="Icons/css.svg"><span>CSS</span></div>
+                    <div class="item"><img src="Icons/js.svg"><span>JS.</span></div>
+                    <div class="item"><img src="Icons/mg.svg"><span>MongoDB</span></div>
+                    <div class="item"><img src="Icons/html.svg"><span>HTML</span></div>
+                    <div class="item"><img src="Icons/Dbsmysql.svg"><span>MySQL.</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <style>
+        .marquee-section {
+            width: 100%;
+            margin: 30px 0 16px 0;
+        }
+
+        .marquee-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .marquee {
+            overflow: hidden;
+            width: 100%;
+            background: #d2e3f9;
+            border-radius: 10px;
+            padding: 10px 0;
+            box-shadow: 0 3px 10px rgba(37, 37, 37, 0.3);
+        }
+
+        .track {
+            display: flex;
+            gap: 4rem;
+            white-space: nowrap;
+            will-change: transform;
+        }
+
+        /* ✅ Same speed & infinite loop */
+        .line1 .track {
+            animation: scroll-right 25s linear infinite;
+        }
+
+        .line2 .track {
+            animation: scroll-left 25s linear infinite;
+        }
+
+        /* Animations */
+        @keyframes scroll-left {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+
+            /* move half because duplicated */
+        }
+
+        @keyframes scroll-right {
+            from {
+                transform: translateX(-50%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: linear-gradient(90deg, #141e24, #4a7b9d);
+            /* ✅ gradient */
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .item img {
+            width: 12px;
+            height: 12px;
+        }
+    </style>
+
+
+    <section id="skills" class="pt-12 pb-8 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <!-- New Gradient Circle -->
+            <div
+                class="absolute -top-20 -left-20 w-96 h-96 bg-gradient-to-br from-primary/10 to-accent/5 rounded-full blur-3xl opacity-60 animate-pulse-slow">
+            </div>
+
+            <div class="absolute top-40 right-20 w-72 h-72 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-20 left-10 w-48 h-48 bg-accent opacity-5 rounded-full animate-float"></div>
+
+            <!-- Tech patterns -->
+            <svg class="absolute top-1/4 left-1/3 text-gray-100 dark:text-gray-900 opacity-10 w-32 h-32"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M14.82 2.41c.17.19.18.49-.01.67l-2.1 2.11 1.63 1.63 2.11-2.1c.18-.19.48-.18.67.01l1.38 1.38c.39.39.39 1.02 0 1.41l-2.13 2.12 6.02 6.03c.39.39.39 1.02 0 1.41l-3.45 3.45c-.39.39-1.02.39-1.41 0L11.8 14.3l-2.13 2.13c-.39.39-1.02.39-1.41 0L6.88 15.05z">
+                </path>
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-10" data-aos="fade-up" data-aos-duration="600">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3 gradient-text">Technical Armory</h2>
+                <div class="w-28 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p class="mt-3 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm md:text-base">The tools and
+                    technologies I use to
+                    bring ideas to life</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center mb-8" data-aos="fade-up" data-aos-delay="150"
+                data-aos-duration="600">
+                <nav
+                    class="tabs-nav flex flex-wrap justify-center space-x-1 md:space-x-2 bg-gray-100 dark:bg-gray-800 rounded-xl p-1.5 shadow-md">
+                    <!-- Tab buttons will be generated by JavaScript -->
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content-container" data-aos="fade-up" data-aos-delay="250">
+                <!-- Tab content will be generated by JavaScript -->
+            </div>
+
+            <!-- Currently Learning Section -->
+            <div class="mt-8 text-center" data-aos="zoom-in" data-aos-delay="300">
+                <h3 class="text-lg md:text-xl font-bold mb-4 inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253">
+                        </path>
+                    </svg>
+                    Currently Expanding Knowledge In
+                </h3>
+
+                <div id="learning-container" class="flex flex-wrap justify-center gap-3">
+                    <!-- Currently learning items will be generated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section with Interactive Horizontal Timeline -->
+    <section id="experience" class="pt-8 pb-8 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-40 right-20 w-72 h-72 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-20 left-10 w-64 h-64 bg-accent opacity-5 rounded-full animate-float"></div>
+
+            <!-- Tech-related SVG patterns -->
+            <svg class="absolute top-1/4 left-1/3 text-gray-100 dark:text-gray-900 opacity-10 w-32 h-32"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-6h11v6zm0-8H4V6h11v4zm5 8h-4V6h4v12z" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3 gradient-text">Professional Journey</h2>
+                <div class="w-32 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p class="mt-3 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Navigating
+                    through my career
+                    milestones and professional growth</p>
+            </div>
+
+
+            <!-- Timeline Navigation Controls -->
+            <div class="flex justify-center mb-4" data-aos="fade-up">
+                <div class="flex space-x-4">
+                    <button id="prev-timeline"
+                        class="p-2 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-primary dark:text-accent">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="next-timeline"
+                        class="p-2 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-primary dark:text-accent">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Horizontal Timeline -->
+            <div class="timeline-container relative pb-6" data-aos="fade-up">
+                <!-- Timeline Track -->
+                <div
+                    class="absolute left-0 right-0 top-6 h-1 bg-gradient-to-r from-primary/20 via-accent/30 to-primary/20 rounded-full">
+                </div>
+
+                <!-- Timeline Nodes -->
+                <div class="absolute left-0 right-0 top-4 flex justify-between px-6 md:px-12">
+                    <div class="w-5 h-5 bg-primary rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
+                    <div class="w-5 h-5 bg-accent rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
+                    <div class="w-5 h-5 bg-primary rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
+                    <div class="w-5 h-5 bg-accent rounded-full border-4 border-white dark:border-gray-800 z-10"></div>
+                </div>
+
+                <!-- Timeline Items -->
+                <div id="timeline-slider"
+                    class="flex space-x-8 overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide pt-12">
+                    <!--__________________________________________________ Timeline Item 1 ______________________________________________________________________________________-->
+                    <!-- <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">Frontend web Development Intern</h3>
+                            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-accent rounded-full text-xs">2024</span>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-primary dark:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Code Tech IT</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400">JUly 2024 - August 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                            Completed a 1 Month internship in Frontend Web Development Program.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-md text-xs">Frontend</span>
+                            <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-md text-xs">Web Development</span>
+                        </div>
+                    </div>
+                </div> -->
+                    <!-- 
+                <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in" data-aos-delay="100">
+    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+        <div class="flex items-center justify-between mb-4">
+            <h3 class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                Frontend web Development Intern
+            </h3>
+            <span class="px-3 py-1 bg-primary/10 text-primary dark:text-accent rounded-full text-xs">2024</span>
+        </div>
+
+        <div class="mb-4">
+            <div class="flex items-center">
+                <div class="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mr-3">
+                    <svg class="w-5 h-5 text-primary dark:text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                        </path>
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-medium">Code Tech IT</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">July 2024 - August 2024</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+            Completed a 1 Month internship in Frontend Web Development Program.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+            <span class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-md text-xs">Frontend</span>
+            <span class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-md text-xs">Web Development</span>
+        </div>
+        
+            <div class="mt-6">
+                 <a href="https://drive.google.com/file/d/1xtcK1YzR4JbvGLAqae3SdBR52l9kmt7h/view?usp=sharing" target="_blank"
+                 class="inline-block px-4 py-2 text-white text-sm font-medium rounded-lg shadow 
+                 bg-[linear-gradient(90deg,#133E57,#4593cb)] 
+                 hover:bg-[linear-gradient(80deg,#0f2c3e,#0d4a80)] 
+                 transition duration-300">
+                 View Certificate
+                </a>
+            </div>
+    </div>
+</div> -->
+
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div
+                            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3
+                                    class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                                    Frontend web Development Intern
+                                </h3>
+                                <span
+                                    class="px-3 py-1 bg-primary/10 text-primary dark:text-accent rounded-full text-xs">2024</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-primary dark:text-accent" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Lets Grow More</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">1 August 2024 - 31 August
+                                            2024</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                                Completed a 1 Month internship in Web Development Program.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span
+                                    class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-md text-xs">Frontend</span>
+                                <span
+                                    class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-md text-xs">Web
+                                    Development</span>
+                            </div>
+
+                            <!-- View Certificate Button -->
+                            <div class="mt-6">
+                                <a href="https://drive.google.com/file/d/1J__JJ0CZ7BE_gCUPZzm-RLEdBRWmWbYw/view?usp=sharing"
+                                    target="_blank" class="inline-block px-4 py-2 text-white text-sm font-medium rounded-lg shadow 
+                 bg-[linear-gradient(90deg,#133E57,#4593cb)] 
+                 hover:bg-[linear-gradient(80deg,#0f2c3e,#0d4a80)] 
+                 transition duration-300">
+                                    View Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div
+                            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3
+                                    class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                                    IOT and Automation Tranning
+                                </h3>
+                                <span
+                                    class="px-3 py-1 bg-primary/10 text-primary dark:text-accent rounded-full text-xs">2024</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-primary dark:text-accent" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Kaizen Future Tech</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">10th November 2024 - 10th
+                                            December 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                                Completed a 1-month IoT internship with hands-on experience in building IoT devices and
+                                developing a Home Automation System project.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span
+                                    class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-md text-xs">IOT</span>
+                                <span
+                                    class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-md text-xs">AI-ML</span>
+                            </div>
+
+                            <!-- View Certificate Button -->
+                            <div class="mt-6">
+                                <a href="https://drive.google.com/file/d/1-3WApi137j6a-rMBwpF2M-QTpEPVbA_y/view?usp=sharing"
+                                    target="_blank" class="inline-block px-4 py-2 text-white text-sm font-medium rounded-lg shadow 
+                 bg-[linear-gradient(90deg,#133E57,#4593cb)] 
+                 hover:bg-[linear-gradient(80deg,#0f2c3e,#0d4a80)] 
+                 transition duration-300">
+                                    View Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in"
+                        data-aos-delay="100">
+                        <div
+                            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3
+                                    class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                                    Data Science & ML Intern
+                                </h3>
+                                <span
+                                    class="px-3 py-1 bg-primary/10 text-primary dark:text-accent rounded-full text-xs">2025</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-primary dark:text-accent" fill="none"
+                                            stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">BrainyBeam</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">10th July 2025 - 8th August
+                                            2025</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                                Completed a 1 Month internship in Data Science & Machine Learning , explored Deep
+                                Learning, python,data visualisation,Data Mining ,handling.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span
+                                    class="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-md text-xs">Data
+                                    Science</span>
+                                <span
+                                    class="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-md text-xs">AI-ML</span>
+                            </div>
+
+                            <!-- View Certificate Button -->
+                            <div class="mt-6">
+                                <a href="https://drive.google.com/file/d/1GGWmkLPK6mW2wTPq4_SWd5yDxVOC340O/view?usp=sharing"
+                                    target="_blank" class="inline-block px-4 py-2 text-white text-sm font-medium rounded-lg shadow 
+                 bg-[linear-gradient(90deg,#133E57,#4593cb)] 
+                 hover:bg-[linear-gradient(80deg,#0f2c3e,#0d4a80)] 
+                 transition duration-300">
+                                    View Certificate
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div
+                            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3
+                                    class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                                    Head OF Editting Team </h3>
+                                <span class="px-3 py-1 bg-accent/10 text-accent dark:text-accent rounded-full text-xs">
+                                    2025-Present</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-accent/10 dark:bg-accent/20 rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">TechKshetra (Tech club)</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">June 2025 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                                Organized technical events,Do Editing work ,Led impactful student club events and
+                                launched educational initiatives that enriched the learning experience of the student
+                                community.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span
+                                    class="px-2 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-md text-xs">Leadership</span>
+                                <span
+                                    class="px-2 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-md text-xs">Event
+                                    Management</span>
+                                <span
+                                    class="px-2 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-md text-xs">Editting</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 5 -->
+                    <div class="timeline-item flex-shrink-0 w-full md:w-80 snap-center group" data-aos="zoom-in"
+                        data-aos-delay="400">
+                        <div
+                            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-gray-100 dark:border-gray-700 transition-all duration-500 hover:shadow-xl group-hover:-translate-y-2">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3
+                                    class="text-xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors">
+                                    Head OF Graphics team Team </h3>
+                                <span class="px-3 py-1 bg-accent/10 text-accent dark:text-accent rounded-full text-xs">
+                                    2025-Present</span>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-10 h-10 bg-accent/10 dark:bg-accent/20 rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">TechKshetra (Tech club)</p>
+                                        <p class="text-xs text-gray-500 dark:text-gray-400">June 2025 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                                graphics head
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span
+                                    class="px-2 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-md text-xs">Leadership</span>
+                                <span
+                                    class="px-2 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-md text-xs">Event
+                                    Management</span>
+                                <span
+                                    class="px-2 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-md text-xs">Editting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Progress Bar -->
+                <div class="hidden md:block mx-auto w-3/4 bg-gray-200 dark:bg-gray-700 h-1.5 rounded-full mt-6">
+                    <div id="timeline-progress"
+                        class="h-full bg-gradient-to-r from-primary to-accent rounded-full w-1/4 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Stats -->
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="fade-up" data-aos-duration="600">
+                <!-- Stat 1: Years Experience -->
+                <div class="relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 group hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-800 dark:text-white mb-0.5">1+</h4>
+                        <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Years Experience</p>
+                    </div>
+                </div>
+
+                <!-- Stat 2: Organizations -->
+                <div class="relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 group hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-7 h-7 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-800 dark:text-white mb-0.5">3+</h4>
+                        <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Organizations</p>
+                    </div>
+                </div>
+
+                <!-- Stat 3: Projects Delivered -->
+                <div class="relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 group hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-800 dark:text-white mb-0.5">5+</h4>
+                        <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Projects Delivered</p>
+                    </div>
+                </div>
+
+                <!-- Stat 4: Skills Gained -->
+                <div class="relative overflow-hidden bg-white dark:bg-gray-800 p-5 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 group hover:shadow-xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="400">
+                    <div
+                        class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full group-hover:scale-150 transition-transform duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <div
+                            class="w-12 h-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-6 h-6 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-800 dark:text-white mb-0.5">10+</h4>
+                        <p class="text-xs md:text-sm text-gray-500 dark:text-gray-400">Skills Gained</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        /* Hide scrollbar for the timeline */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+    <section id="projects" class="pt-10 pb-12 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-40 left-20 w-72 h-72 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-20 right-10 w-64 h-64 bg-accent opacity-5 rounded-full animate-float"></div>
+
+            <!-- Tech-related SVG patterns -->
+            <svg class="absolute top-1/3 right-1/4 text-gray-100 dark:text-gray-900 opacity-10 w-32 h-32"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M20.59 12l-3.3-3.3a1 1 0 1 1 1.42-1.4l4 4a1 1 0 0 1 0 1.4l-4 4a1 1 0 0 1-1.42-1.4l3.3-3.3zM3.4 12l3.3 3.3a1 1 0 0 1-1.42 1.4l-4-4a1 1 0 0 1 0-1.4l4-4a1 1 0 0 1 1.42 1.4L3.4 12z" />
+            </svg>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-8" data-aos="fade-up" data-aos-duration="600">
+                <h2 class="text-3xl md:text-4xl font-bold mb-3 gradient-text">Innovation Projects Showcase</h2>
+                <div class="w-32 h-1.5 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p class="mt-3 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Showcasing my
+                    journey through data
+                    analysis, web development, and UI/UX Designer </p>
+            </div>
+
+            <!-- Projects Filter Navigation -->
+            <div class="flex flex-wrap justify-center mb-8" data-aos="fade-up" data-aos-delay="150"
+                data-aos-duration="600">
+                <nav
+                    class="projects-filter flex flex-wrap justify-center space-x-1 md:space-x-2 bg-gray-100 dark:bg-gray-800 rounded-xl p-1.5 shadow-md">
+                    <button
+                        class="filter-btn px-3 py-2 text-xs md:text-sm font-medium rounded-lg transition-all duration-200 active-filter"
+                        data-filter="web-dev">
+                        <span class="flex items-center">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z">
+                                </path>
+                            </svg>
+                            Web Development
+                        </span>
+                    </button>
+                    <button
+                        class="filter-btn px-3 py-2 text-xs md:text-sm font-medium rounded-lg transition-all duration-200"
+                        data-filter="data-analytics">
+                        <span class="flex items-center">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg>
+                            Data Analytics
+                        </span>
+                    </button>
+
+                    <button
+                        class="filter-btn px-3 py-2 text-xs md:text-sm font-medium rounded-lg transition-all duration-200"
+                        data-filter="cloud">
+                        <span class="flex items-center">
+                            <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                </path>
+                            </svg>
+                            UI/UX / Design
+                        </span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Projects Showcase Grid - Now smaller cards with more columns -->
+            <div id="project-container" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 project-container">
+                <!-- Project cards will be dynamically inserted here -->
+                <div class="flex justify-center items-center col-span-full py-8">
+                    <div class="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+                </div>
+            </div>
+
+            <!-- Project Stats & GitHub Activity -->
+            <div class="mt-8 relative rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-gray-700 overflow-hidden"
+                data-aos="zoom-in"
+                style="background: url('/mnt/data/55eb49a8-8026-481f-9898-e17d84b0d111.png') center/cover no-repeat;">
+
+                <!-- Dark overlay for readability -->
+                <div class="absolute inset-0 bg-white/90 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl"></div>
+
+                <div class="relative">
+                    <h3 class="text-xl font-bold mb-4 text-center text-gray-900 dark:text-white">Development Metrics
+                    </h3>
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                        <!-- Stats Cards -->
+                        <div
+                            class="p-3 group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 transition-all duration-300">
+                            <div
+                                class="absolute -right-8 -bottom-8 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-1 text-gray-800 dark:text-gray-100">6+</h4>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Projects Completed</p>
+                        </div>
+
+                        <div
+                            class="p-3 group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 transition-all duration-300">
+                            <div
+                                class="absolute -right-8 -bottom-8 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-1 text-gray-800 dark:text-gray-100">2+</h4>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Years Experience</p>
+                        </div>
+
+                        <div
+                            class="p-3 group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 transition-all duration-300">
+                            <div
+                                class="absolute -right-8 -bottom-8 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-1 text-gray-800 dark:text-gray-100">4+</h4>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Project Contributors</p>
+                        </div>
+
+                        <div
+                            class="p-3 group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 transition-all duration-300">
+                            <div
+                                class="absolute -right-8 -bottom-8 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-700">
+                            </div>
+                            <div
+                                class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:scale-125 transition-transform duration-300 shadow-lg">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold mb-1 text-gray-800 dark:text-gray-100">10+</h4>
+                            <p class="text-xs text-gray-600 dark:text-gray-400">Skills Applied</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 text-center relative">
+                        <a href="https://github.com/Shehnaz-R" target="_blank"
+                            class="inline-flex items-center px-5 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-primary hover:text-white dark:hover:bg-primary text-gray-800 dark:text-gray-200 rounded-lg text-sm font-medium overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 group">
+                            <span class="relative flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-gray-700 group-hover:text-white dark:text-gray-300 transition-colors duration-300"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                    </path>
+                                </svg>
+                                Explore My GitHub
+                                <svg class="w-3 h-3 ml-1 transform transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Project Card Template (hidden) -->
+            <template id="project-card-template">
+                <div class="project-item group" data-aos="fade-up">
+                    <div
+                        class="relative overflow-hidden bg-white dark:bg-gray-800 rounded-lg shadow-md transition-all duration-500 hover:shadow-xl transform hover:-translate-y-1">
+                        <!-- Project Header with Gradient -->
+                        <div class="h-32 bg-gradient-to-br relative overflow-hidden project-header">
+                            <!-- Project Icon with Animation -->
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div
+                                    class="w-14 h-14 bg-white/20 rounded-full backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                                    <svg class="w-7 h-7 text-white project-icon" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Date Badge -->
+                            <div class="absolute top-2 right-2 px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full">
+                                <span class="text-xs font-medium text-white project-date"></span>
+                            </div>
+                        </div>
+
+                        <!-- Project Content -->
+                        <div class="p-4">
+                            <h3
+                                class="text-base font-bold mb-1 group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300 project-title">
+                            </h3>
+
+                            <!-- Description with expandable functionality -->
+                            <div class="description-container relative">
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 text-xs mb-3 description-text line-clamp-2 group-hover:line-clamp-none transition-all duration-300 project-desc">
+                                </p>
+                                <div
+                                    class="description-fade absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white dark:from-gray-800 to-transparent group-hover:opacity-0 transition-opacity duration-300">
+                                </div>
+                            </div>
+
+                            <!-- Skills Badges -->
+                            <div class="flex flex-wrap gap-1 mb-3 project-skills"></div>
+
+                            <!-- Project Links -->
+                            <div class="flex justify-between items-center">
+                                <a href="#"
+                                    class="project-link text-primary dark:text-accent text-xs font-medium hover:underline inline-flex items-center group/link">
+                                    <span class="project-link-text">View Project</span>
+                                    <svg class="w-3 h-3 ml-1 transform transition-transform duration-300 group-hover/link:translate-x-1"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                                <span class="text-[10px] text-gray-500 dark:text-gray-400 project-category"></span>
+                            </div>
+                            <!-- Preview Button -->
+                            <div>
+                                <br>
+                                <a href="#" target="_blank" class="inline-block px-4 py-2 text-white text-sm font-medium rounded-lg shadow 
+                 bg-[linear-gradient(90deg,#133E57,#4593cb)] 
+                 hover:bg-[linear-gradient(80deg,#0f2c3e,#0d4a80)] 
+                 transition duration-300">
+                                    Preview Project
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <!-- JavaScript to Load Projects from Backend -->
+    </section>
+    <!-- Achievements Section with Responsive Card Grid -->
+    <!-- Achievements Section with Dynamic Loading & Carousel -->
+    <section id="achievements" class="pt-8 pb-8 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/3 right-10 w-56 h-56 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-10 left-10 w-48 h-48 bg-accent opacity-5 rounded-full animate-float"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-6" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-2 gradient-text">Achievements</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p class="mt-2 text-gray-600 dark:text-gray-400 max-w-xl mx-auto text-sm md:text-base">Notable
+                    recognitions and
+                    competition success</p>
+            </div>
+
+            <!-- Achievement Carousel -->
+            <div class="relative">
+                <!-- Carousel Navigation -->
+                <div class="flex justify-center gap-2 mb-4">
+                    <button id="prev-achievement"
+                        class="p-2 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-primary dark:text-accent focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="next-achievement"
+                        class="p-2 bg-white dark:bg-gray-800 rounded-full shadow-md hover:shadow-lg transition-all duration-300 text-primary dark:text-accent focus:outline-none">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Achievement Cards Container -->
+                <div id="achievements-container" class="flex overflow-hidden gap-8 py-4 px-2">
+                    <!-- Achievement cards will be dynamically inserted here -->
+                    <div class="w-full flex justify-center items-center">
+                        <div class="w-10 h-10 border-4 border-primary border-t-transparent rounded-full animate-spin">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement Stats -->
+            <div class="mt-24 mb-12 bg-gradient-to-r from-white/50 to-white/80 dark:from-gray-800/50 dark:to-gray-800/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-gray-700"
+                data-aos="fade-up">
+                <h4
+                    class="text-center text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 flex items-center justify-center">
+                    <svg class="w-5 h-5 mr-2 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"></svg>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                    </path>
+                    </svg>
+                    Achievement Metrics
+                </h4>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Competition Stats -->
+                    <div
+                        class="group relative overflow-hidden bg-white dark:bg-blue-900 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col items-center relative">
+                            <div
+                                class="w-12 h-12 mb-3 bg-primary/10 dark:bg-primary/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+
+                                <!-- Fixed SVG -->
+                                <svg class="w-6 h-6 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 
+                      3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 
+                      3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 
+                      3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 
+                      3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 
+                      3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 
+                      3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 
+                      3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 
+                      3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+
+                            <span
+                                class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-colors duration-300 counter-value"
+                                data-target="4">4+</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Competitions</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Team Members Stats -->
+                    <div
+                        class="group relative overflow-hidden bg-white dark:bg-gray-900 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="absolute -right-6 -bottom-6 w-24 h-24 bg-accent/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col items-center relative">
+                            <div
+                                class="w-12 h-12 mb-3 bg-accent/10 dark:bg-accent/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-accent transition-colors duration-300 counter-value"
+                                data-target="10">10+</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Team Members</span>
+                        </div>
+                    </div>
+
+                    <!-- Awards Stats -->
+                    <div
+                        class="group relative overflow-hidden bg-white dark:bg-gray-900 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="absolute -right-6 -bottom-6 w-24 h-24 bg-purple-500/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col items-center relative">
+                            <div
+                                class="w-12 h-12 mb-3 bg-purple-500/10 dark:bg-purple-500/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span
+                                class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-purple-500 transition-colors duration-300 counter-value"
+                                data-target="1">1+</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Awards</span>
+                        </div>
+                    </div>
+
+                    <!-- Solutions Stats -->
+                    <div
+                        class="group relative overflow-hidden bg-white dark:bg-gray-900 rounded-xl p-5 shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                        <div
+                            class="absolute -right-6 -bottom-6 w-24 h-24 bg-green-500/10 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="flex flex-col items-center relative">
+                            <div
+                                class="w-12 h-12 mb-3 bg-green-500/10 dark:bg-green-500/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <span
+                                class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-green-500 transition-colors duration-300 counter-value"
+                                data-target="5">5+</span>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div></svg>
+        </div>
+
+        <!-- Achievement Card Template -->
+        <template id="achievement-template">
+            <div class="achievement-card flex-shrink-0 w-full md:w-[350px] snap-center group" data-aos="fade-up">
+                <div
+                    class="bg-white dark:bg-gray-800 rounded-xl overflow-hidden h-full shadow-md hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div class="relative">
+                        <div class="h-32 bg-cover bg-center achievement-image"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                        <div class="absolute top-2 left-2">
+                            <span class="achievement-date px-2 py-0.5 rounded-full text-xs font-medium"></span>
+                        </div>
+                        <div class="achievement-badge absolute -top-3 -right-3"></div>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="achievement-title text-lg font-bold text-gray-800 dark:text-white"></h3>
+                            <span class="achievement-org text-xs text-gray-500 dark:text-gray-400"></span>
+                        </div>
+
+                        <p class="achievement-desc text-xs text-gray-600 dark:text-gray-300 mb-3 line-clamp-2"></p>
+
+                        <div class="achievement-tags flex flex-wrap gap-1 text-xs mb-2"></div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <style>
+            .achievement-stat {
+                @apply flex flex-col items-center justify-center p-3 bg-gradient-to-br from-primary/5 to-accent/5 rounded-lg min-w-[90px];
+            }
+
+            .stat-value {
+                @apply text-xl font-bold text-primary dark:text-accent;
+            }
+
+            .stat-label {
+                @apply text-xs text-gray-500 dark:text-gray-400;
+            }
+
+            #achievements-container {
+                scroll-snap-type: x mandatory;
+                scroll-behavior: smooth;
+            }
+
+            .achievement-card {
+                scroll-snap-align: center;
+            }
+        </style>
+        <!-- __________________________________certification card ______________________________________________________ -->
+    </section>
+    <!-- Certifications Section with Compact Cards -->
+    <section id="certifications" class="pt-10 pb-12 bg-gray-50 dark:bg-gray-900 relative overflow-hidden">
+        <!-- Subtle background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-40 right-20 w-48 h-48 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute bottom-20 left-10 w-40 h-40 bg-accent opacity-5 rounded-full animate-float"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-8" data-aos="fade-up">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3 gradient-text">Certifications</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full"></div>
+                <p class="mt-3 text-sm text-gray-600 dark:text-gray-400 max-w-xl mx-auto">Professional credentials
+                    validating my expertise</p>
+            </div>
+
+            <!-- Filter Buttons - More Compact -->
+            <div class="flex justify-center mb-6" data-aos="fade-up">
+                <div class="inline-flex flex-wrap justify-center bg-gray-100 dark:bg-gray-800 rounded-lg p-1 shadow-sm">
+                    <button
+                        class="cert-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200 active-cert"
+                        data-filter="all">All</button>
+                    <button class="cert-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200"
+                        data-filter="technical">Technical</button>
+                    <button class="cert-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200"
+                        data-filter="data">Data Science</button>
+                    <button class="cert-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200"
+                        data-filter="ui/ux">UI/UX (designing)</button>
+                    <button class="cert-btn px-3 py-1.5 text-xs font-medium rounded-md transition-all duration-200"
+                        data-filter="business">Competitions</button>
+                </div>
+            </div>
+
+            <!-- Compact Certification Cards Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 cert-container"
+                id="certification-container">
+                <!-- Cards will be dynamically loaded from backend -->
+                <div class="flex justify-center items-center col-span-full py-8">
+                    <div class="w-8 h-8 border-3 border-primary border-t-transparent rounded-full animate-spin"></div>
+                </div>
+            </div>
+
+            <!-- Show More Button -->
+            <!-- <div class="flex justify-center mt-6" data-aos="fade-up">
+                <button id="load-more-certs" class="px-4 py-2 text-sm bg-white dark:bg-gray-800 text-primary dark:text-accent border border-primary dark:border-accent rounded-lg hover:bg-primary hover:text-white transition-colors duration-300 flex items-center">
+                    <span>View All Certifications</span>
+                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+            </div> -->
+        </div>
+
+        <!-- Certification Card Template (hidden) -->
+        <template id="cert-card-template">
+            <div class="cert-item group" data-category="" data-aos="fade-up">
+                <div
+                    class="relative bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300 h-full">
+                    <!-- Color Banner -->
+                    <div class="h-2 cert-color-bar"></div>
+
+                    <!-- Certificate Content -->
+                    <div class="p-4">
+                        <!-- Organization Logo/Badge -->
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 rounded-md cert-icon-bg flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white cert-icon" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24"></svg>
+                                </div>
+                            </div>
+                            <span class="text-xs cert-date text-gray-500 dark:text-gray-400"></span>
+                        </div>
+
+                        <!-- Certificate Title -->
+                        <h3 class="cert-title text-sm font-bold mb-1 line-clamp-2"></h3>
+
+                        <!-- Certificate Issuer -->
+                        <p class="cert-issuer text-xs text-gray-500 dark:text-gray-400 mb-3"></p>
+
+                        <!-- Certificate Tags -->
+                        <div class="cert-tags flex flex-wrap gap-1 mb-3"></div>
+
+                        <!-- Certificate Link -->
+                        <div class="flex justify-between items-center">
+                            <a href="#"
+                                class="cert-link text-xs text-primary dark:text-accent flex items-center hover:underline">
+                                <span>View</span>
+                                <svg class="w-3 h-3 ml-1 transform transition-transform duration-300 group-hover:translate-x-1"
+                                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                            <span class="cert-id text-xs text-gray-400"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- JavaScript to load certificates from backend -->
+
+        <style>
+            .active-cert {
+                @apply bg-white dark:bg-gray-700 text-primary dark:text-accent shadow-sm;
+            }
+
+            .cert-item {
+                @apply transition-all duration-300;
+            }
+        </style>
+        <!-- Certification Statistics -->
+        <div class="mt-10 bg-gradient-to-br from-white/80 to-gray-90/70 dark:from-gray-800/90 dark:to-gray-900/80 backdrop-blur-sm rounded-1xl p-6 shadow-xl border border-gray-90 dark:border-gray-700 overflow-hidden relative"
+            data-aos="fade-up">
+            <!-- Background decorative elements -->
+            <div
+                class="absolute -right-20 -top-20 w-40 h-40 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-1xl opacity-60">
+            </div>
+            <div
+                class="absolute -left-20 -bottom-20 w-40 h-40 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full blur-1xl opacity-60">
+            </div>
+
+            <!-- Section header with icon -->
+            <div class="flex items-center justify-center mb-8">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-lg transform rotate-12 shadow-lg mr-3">
+                </div>
+                <h4 class="text-xl font-bold text-gray-800 dark:text-gray-200 relative">
+                    Certification Arsenal
+                    <span
+                        class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-primary/40 to-accent/40"></span>
+                </h4>
+            </div>
+
+            <!-- Stats Cards with hover effects -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <!-- Total Certifications -->
+                <div
+                    class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-xl p-3 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="absolute -right-8 -bottom-8 w-28 h-28 bg-primary/20 rounded-full opacity-10 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700">
+                    </div>
+                    <div class="flex flex-col items-center relative">
+                        <div
+                            class="w-14 h-14 mb-3 bg-primary/10 dark:bg-primary/20 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <svg class="w-7 h-7 text-primary dark:text-accent" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span
+                            class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-primary dark:group-hover:text-accent transition-all duration-300 counter-value"
+                            data-target="15">15+</span>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Total Certifications</p>
+                    </div>
+                </div>
+
+                <!-- Technical Certs -->
+                <div
+                    class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-xl p-5 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="absolute -right-8 -bottom-8 w-28 h-28 bg-blue-500/20 rounded-full opacity-10 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700">
+                    </div>
+                    <div class="flex flex-col items-center relative">
+                        <div
+                            class="w-14 h-14 mb-3 bg-blue-500/10 dark:bg-blue-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <svg class="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                            </svg>
+                        </div>
+                        <span
+                            class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-blue-500 transition-all duration-300 counter-value"
+                            data-target="7">7+</span>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Technical Certs</p>
+                    </div>
+                </div>
+                <!-- Data Analaytics -->
+                <div
+                    class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-xl p-5 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="absolute -right-8 -bottom-8 w-28 h-28 bg-green-500/20 rounded-full opacity-10 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700">
+                    </div>
+                    <div class="flex flex-col items-center relative">
+                        <div
+                            class="w-14 h-14 mb-3 bg-green-500/10 dark:bg-green-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <svg class="w-7 h-7 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span
+                            class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-green-500 transition-all duration-300 counter-value"
+                            data-target="3">3 +</span>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">Data Science</p>
+                    </div>
+                </div>
+                <!-- UI/UX  -->
+                <div
+                    class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-xl p-5 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                    <div
+                        class="absolute -right-8 -bottom-8 w-28 h-28 bg-amber-500/20 rounded-full opacity-10 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700">
+                    </div>
+                    <div class="flex flex-col items-center relative">
+                        <div
+                            class="w-14 h-14 mb-3 bg-amber-500/10 dark:bg-amber-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                            <svg class="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span
+                            class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-amber-500 transition-all duration-300 counter-value"
+                            data-target="2">2</span>
+                        <p class="text-xs text-gray-500 dark:text-gray-400">UI/UX (designing)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Business -->
+            <div
+                class="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-xl p-5 hover:shadow-lg transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
+                <div
+                    class="absolute -right-8 -bottom-8 w-28 h-28 bg-amber-500/20 rounded-full opacity-10 group-hover:opacity-100 group-hover:scale-150 transition-all duration-700">
+                </div>
+                <div class="flex flex-col items-center relative">
+                    <div
+                        class="w-14 h-14 mb-3 bg-amber-500/10 dark:bg-amber-500/20 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                        <svg class="w-7 h-7 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <span
+                        class="text-2xl font-bold text-gray-800 dark:text-white group-hover:text-amber-500 transition-all duration-300 counter-value"
+                        data-target="4">4</span>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Competitions</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modern Chart with Interactive Elements -->
+
+        </div>
+    </section>
+    <!-- ______________________________________________________________________ contact ______________________________________________ -->
+    <!-- Contact Section - Compact & Attractive Design -->
+    <section id="contact" class="py-12 relative overflow-hidden">
+        <!-- Floating background elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-40 left-10 w-60 h-60 bg-primary opacity-5 rounded-full animate-pulse-slow"></div>
+            <div class="absolute -bottom-20 right-10 w-48 h-48 bg-accent opacity-5 rounded-full animate-float"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Section Header with Minimalist Design -->
+            <div class="text-center mb-10" data-aos="fade-up">
+                <h2 class="text-3xl font-bold gradient-text inline-block relative">
+                    Let's Connect
+                    <div class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-primary to-accent"></div>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-400 text-sm max-w-md mx-auto mt-3">
+                    Open to new opportunities and conversations!
+                </p>
+            </div>
+
+            <!-- Compact Contact Layout -->
+            <div class="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700"
+                data-aos="zoom-in">
+                <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3">
+                    <!-- Left Sidebar: Contact Info & Social -->
+                    <div class="p-6 md:col-span-2 lg:col-span-1 bg-gradient-to-br from-primary/5 to-accent/5">
+                        <!-- Quick Contact Cards -->
+                        <div class="space-y-4">
+                            <!-- Email -->
+                            <div class="flex items-center group">
+                                <div
+                                    class="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary dark:text-accent mr-4 group-hover:scale-110 transition-transform">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <a href="shehnazrangrez2006@gmail.com"
+                                    class="text-sm font-medium">shehnazrangrez2006@gmail.com</a>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="flex items-center group">
+                                <div
+                                    class="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center text-accent mr-4 group-hover:scale-110 transition-transform">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <a href="tel:+919665457904" class="text-sm font-medium">+91 9665457904</a>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-center group">
+                                <div
+                                    class="w-10 h-10 bg-purple-500/10 rounded-lg flex items-center justify-center text-purple-500 mr-4 group-hover:scale-110 transition-transform">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                        </path>
+                                        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-sm">Mumbai ,Maharastra</span>
+                            </div>
+                        </div>
+
+                        <!-- Social Media - Compact Row -->
+                        <div class="mt-6">
+                            <h4 class="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3">Follow me</h4>
+                            <div class="flex space-x-3">
+                                <a href="https://www.linkedin.com/in/shehnaz-rangrez-3a7228280/" class="group">
+                                    <div
+                                        class="w-9 h-9 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center shadow-sm group-hover:bg-blue-500 group-hover:text-white text-blue-500 transition-all duration-300">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/Shehnaz-R" class="group">
+                                    <div
+                                        class="w-9 h-9 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center shadow-sm group-hover:bg-gray-800 dark:group-hover:bg-gray-600 group-hover:text-white text-gray-700 dark:text-white transition-all duration-300">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a>
+                                <!-- <a href="#" class="group"></a>
+                                <div
+                                    class="w-9 h-9 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center shadow-sm group-hover:bg-blue-400 group-hover:text-white text-blue-400 transition-all duration-300">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                </a> -->
+                                <!-- <a href="#" class="group">
+                                    <div
+                                        class="w-9 h-9 bg-white dark:bg-gray-700 rounded-lg flex items-center justify-center shadow-sm group-hover:bg-red-500 group-hover:text-white text-red-500 transition-all duration-300">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </a> -->
+                            </div>
+                        </div>
+                        <!-- Availability Badge -->
+                        <div class="mt-6 flex items-center bg-green-50 dark:bg-green-900/20 p-2 rounded-lg">
+                            <div class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                            <span class="text-xs text-green-700 dark:text-green-400">Available for new projects</span>
+                        </div>
+                    </div>
+                    <!-- ________________________________________________________________________start contact form __________________________________________________________________________________________ -->
+                    <!-- Right: Contact Form -->
+                    <div class="p-6 md:col-span-3 lg:col-span-2 relative">
+                        <h3 class="text-lg font-bold mb-4">Send a Message</h3>
+
+                        <!-- Swapped out formspree action URL with your working Google Script URL -->
+                        <form id="contact-form"
+                            action="https://script.google.com/macros/s/AKfycbyeNVMsUWietKSHn2PoPh0fc5kLeUxlCFcri5G8uGr2Crfd5x9nQ6E6Z4sEsTlHaHE/exec"
+                            method="POST" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <!-- Name Field -->
+                                <div class="relative">
+                                    <input type="text" id="name" name="name"
+                                        class="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary dark:focus:ring-accent dark:focus:border-accent"
+                                        placeholder="Your Name" required>
+                                </div>
+
+                                <!-- Email Field -->
+                                <div class="relative">
+                                    <input type="email" id="email" name="email"
+                                        class="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary dark:focus:ring-accent dark:focus:border-accent"
+                                        placeholder="Your Email" required>
+                                </div>
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="relative">
+                                <input type="text" id="subject" name="subject"
+                                    class="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary dark:focus:ring-accent dark:focus:border-accent"
+                                    placeholder="Subject" required>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="relative">
+                                <textarea id="message" name="message" rows="3"
+                                    class="w-full px-3 py-2 text-sm bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-1 focus:ring-primary focus:border-primary dark:focus:ring-accent dark:focus:border-accent resize-none"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+
+                            <div class="flex items-center">
+                                <input id="privacy" name="privacy-policy-accepted" type="checkbox"
+                                    class="w-3.5 h-3.5 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary dark:focus:ring-accent dark:bg-gray-700 dark:border-gray-600"
+                                    required>
+                                <label for="privacy" class="ml-2 text-xs text-gray-600 dark:text-gray-400">
+                                    I agree to the <a href="#"
+                                        class="text-primary dark:text-accent hover:underline">privacy policy</a>
+                                </label>
+                            </div>
+
+                            <!-- Hidden honeypot field to prevent spam -->
+                            <input type="text" name="_gotcha" style="display:none" />
+
+                            <!-- Submit Button -->
+                            <button type="submit" id="submit-btn"
+                                class="group w-full px-4 py-2 bg-gradient-to-r from-primary to-accent text-white rounded-lg text-sm font-medium hover:shadow-lg transform transition-all duration-300 hover:-translate-y-0.5">
+                                <span class="flex items-center justify-center" id="submit-btn-text">
+                                    Send Message
+                                    <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <!-- Success Message (initially hidden) -->
+                            <div id="form-success"
+                                class="hidden p-3 text-xs text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                                role="alert">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span>Your message has been sent successfully!</span>
+                                </div>
+                            </div>
+
+                            <!-- Failure Message (initially hidden) -->
+                            <div id="form-error"
+                                class="hidden p-3 text-xs text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                                role="alert">
+                                <span>Oops! Something went wrong. Please try again.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Form submission handling integrated with Google Sheets URL fetch routing
+            document.addEventListener('DOMContentLoaded', function () {
+                const form = document.getElementById('contact-form');
+                const success = document.getElementById('form-success');
+                const errorBox = document.getElementById('form-error');
+                const submitBtn = document.getElementById('submit-btn');
+                const submitBtnText = document.getElementById('submit-btn-text');
+
+                if (form) {
+                    form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        // Set visual loading state
+                        submitBtn.disabled = true;
+                        if (submitBtnText) submitBtnText.innerText = 'Sending...';
+                        success.classList.add('hidden');
+                        if (errorBox) errorBox.classList.add('hidden');
+
+                        const formData = new FormData(form);
+                        const urlParams = new URLSearchParams();
+
+                        formData.forEach((value, key) => {
+                            urlParams.append(key, value);
+                        });
+
+                        // Uses GET query formatting to prevent CORS issues from local systems
+                        fetch(form.action + '?' + urlParams.toString(), {
+                            method: 'GET',
+                            mode: 'no-cors'
+                        })
+                            .then(() => {
+                                // Success callback triggers visual confirmation layout block
+                                success.classList.remove('hidden');
+                                form.reset();
+
+                                setTimeout(() => {
+                                    success.classList.add('hidden');
+                                }, 5000);
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                if (errorBox) errorBox.classList.remove('hidden');
+                            })
+                            .finally(() => {
+                                // Reset submit button configurations
+                                submitBtn.disabled = false;
+                                if (submitBtnText) {
+                                    submitBtnText.innerHTML = `
+                            Send Message
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        `;
+                                }
+                            });
+                    });
+                }
+            });
+        </script>
+    </section>
+
+    <!-- ________________________________________________________________________End contact form __________________________________________________________________________________________ -->
+    <!-- Footer -->
+    <footer class="py-12 bg-gray-100 dark:bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">Shehnaz Samir Rangrez</a>
+                    <p class="text-gray-600 dark:text-gray-400 mt-2">Web & software Developer | Data
+                        Analytics | UI/UX Designer</p>
+                </div>
+
+                <div class="flex space-x-6">
+                    <a href="#"
+                        class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">Home</a>
+                    <a href="#about"
+                        class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">About</a>
+                    <a href="#projects"
+                        class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">Projects</a>
+                    <a href="#contact"
+                        class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">Contact</a>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-gray-200 dark:border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 dark:text-gray-500 mb-4 md:mb-0">© 2025 Shehnaz Samir Rangrez. All rights
+                    reserved.</p>
+
+                <div class="flex space-x-4">
+                    <a href=""
+                        class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 500,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 60,
+            mirror: false,
+        });
+
+        // Preloader
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function () {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+        // Check for saved user preference or use system preference
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            lightIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            darkIcon.classList.remove('hidden');
+        }
+
+        themeToggle.addEventListener('click', function () {
+            // Toggle icons
+            darkIcon.classList.toggle('hidden');
+            lightIcon.classList.toggle('hidden');
+
+            // Toggle theme
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Animate skill bars when they come into view
+        const skillBars = document.querySelectorAll('.skill-bar');
+
+        const animateSkillBars = () => {
+            skillBars.forEach(bar => {
+                const rect = bar.getBoundingClientRect();
+                if (rect.top <= window.innerHeight * 0.8) {
+                    bar.style.width = bar.parentElement.previousElementSibling.lastElementChild.textContent;
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateSkillBars);
+        window.addEventListener('load', animateSkillBars);
+    </script>
+
+    <script>
+        (function () {
+            const toggleBtn = document.getElementById('theme-toggle');
+            const darkIcon = document.getElementById('theme-toggle-dark-icon');
+            const lightIcon = document.getElementById('theme-toggle-light-icon');
+
+            // Ensure icons are hidden initially
+            darkIcon.classList.add('hidden');
+            lightIcon.classList.add('hidden');
+
+            // Function to apply theme
+            const applyTheme = (theme) => {
+                if (theme === 'dark') {
+                    document.documentElement.classList.add('dark');
+                    darkIcon.classList.remove('hidden');
+                    lightIcon.classList.add('hidden');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    darkIcon.classList.add('hidden');
+                    lightIcon.classList.remove('hidden');
+                }
+            };
+
+            // Load theme from local storage or system preference
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+
+            // Add event listener for theme toggle button
+            toggleBtn.addEventListener('click', () => {
+                const currentTheme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                applyTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+
+                // Force re-render to avoid mixed colors
+                setTimeout(() => {
+                    document.documentElement.classList.remove('dark', 'light');
+                    document.documentElement.classList.add(newTheme);
+                }, 0);
+            });
+        })();
+    </script>
+</body>
+
+</html>

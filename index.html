@@ -1,0 +1,390 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #status-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            display: block !important;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+        <div id="status-message"></div>
+    </div>
+
+     <script>
+        const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx0gQARpIE61Ud5VepOpjcsqdhF1QbiVqiKtaEWdmcNk1EeEj_qqjVpfuqD7T5wBA7T/exec';
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submit-btn');
+            const statusMsg = document.getElementById('status-message');
+
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+            statusMsg.style.display = 'none';
+            statusMsg.className = '';
+
+            // FIX: Convert the standard FormData object into a URL-encoded string parameter query
+            const formData = new FormData(form);
+            const urlEncodedPayload = new URLSearchParams(formData).toString();
+
+            // Submit data securely using alternative network options
+            fetch(WEB_APP_URL, {
+                method: 'POST',
+                mode: 'no-cors', // Bypasses browser CORS policy blocks when handling text from local system files
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: urlEncodedPayload
+            })
+                .then(() => {
+                    // When utilizing 'no-cors', the engine blocks reading metadata from the response payload.
+                    // If execution passes cleanly to this segment without catching network drop errors, it successfully posted data!
+                    statusMsg.className = 'success';
+                    statusMsg.innerText = 'Thank you! Your message has been sent.';
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    statusMsg.className = 'error';
+                    statusMsg.innerText = 'Oops! Something went wrong. Try again.';
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Send Message';
+                });
+        });
+    </script> 
+
+    <script>
+        const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx0gQARpIE61Ud5VepOpjcsqdhF1QbiVqiKtaEWdmcNk1EeEj_qqjVpfuqD7T5wBA7T/exec';
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submit-btn');
+            const statusMsg = document.getElementById('status-message');
+
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+            statusMsg.style.display = 'none';
+
+            // Convert form data into a clean JavaScript object
+            const formData = new FormData(form);
+            const object = {};
+            formData.forEach((value, key) => object[key] = value);
+
+            // Send data directly via JSON POST parameter layout
+            fetch(WEB_APP_URL, {
+                method: 'POST',
+                mode: 'cors', // Let us see the true network error response
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8'
+                },
+                body: JSON.stringify(object)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.result === 'success') {
+                        statusMsg.className = 'success';
+                        statusMsg.innerText = 'Success! Message saved.';
+                        form.reset();
+                    } else {
+                        statusMsg.className = 'error';
+                        statusMsg.innerText = 'Backend Error: ' + data.error;
+                    }
+                })
+                .catch(error => {
+                    console.error('Diagnostic Log:', error);
+                    statusMsg.className = 'error';
+                    // Output the exact failure details directly to your form box
+                    statusMsg.innerText = 'System Connection Error: ' + error.message;
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Send Message';
+                });
+        });
+    </script>
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #555;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #status-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            display: block !important;
+        }
+
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+        <div id="status-message"></div>
+    </div>
+
+    <script>
+        const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx0gQARpIE61Ud5VepOpjcsqdhF1QbiVqiKtaEWdmcNk1EeEj_qqjVpfuqD7T5wBA7T/exec';
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = document.getElementById('submit-btn');
+            const statusMsg = document.getElementById('status-message');
+
+            submitBtn.disabled = true;
+            submitBtn.innerText = 'Sending...';
+            statusMsg.style.display = 'none';
+            statusMsg.className = '';
+
+            // Extract values and convert to URL text string formatting
+            const formData = new FormData(form);
+            const urlParams = new URLSearchParams();
+
+            formData.forEach((value, key) => {
+                urlParams.append(key, value);
+            });
+
+            // Submit using a GET string mapping to bypass local folder system blocks completely
+            fetch(WEB_APP_URL + '?' + urlParams.toString(), {
+                method: 'GET',
+                mode: 'no-cors'
+            })
+                .then(() => {
+                    statusMsg.className = 'success';
+                    statusMsg.innerText = 'Thank you! Your message has been sent.';
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    statusMsg.className = 'error';
+                    statusMsg.innerText = 'Oops! Something went wrong. Try again.';
+                })
+                .finally(() => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = 'Send Message';
+                });
+        });
+    </script>
+
+</body>
+
+</html>
